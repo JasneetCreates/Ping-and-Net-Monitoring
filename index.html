@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Monitor - Ping & Connection Testing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌐 Network Monitoring Tool</h1>
+            <p class="subtitle">Ping Testing & Network Analysis</p>
+        </header>
+
+        <div class="main-content">
+            <!-- Ping Test Section -->
+            <section class="card">
+                <h2>Ping Test</h2>
+                <div class="input-group">
+                    <input type="text" id="hostInput" placeholder="Enter hostname or IP (e.g., google.com)" value="google.com">
+                    <button id="pingBtn" class="btn btn-primary">Start Ping</button>
+                </div>
+                <div id="pingStatus" class="status-indicator"></div>
+                <div id="pingResults" class="results-box"></div>
+            </section>
+
+            <!-- Statistics Section -->
+            <section class="card">
+                <h2>Connection Statistics</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-label">Packets Sent</div>
+                        <div class="stat-value" id="packetsSent">0</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Packets Received</div>
+                        <div class="stat-value" id="packetsReceived">0</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Packet Loss</div>
+                        <div class="stat-value" id="packetLoss">0%</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Avg Response Time</div>
+                        <div class="stat-value" id="avgTime">0 ms</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Network Info Section -->
+            <section class="card">
+                <h2>Network Information</h2>
+                <div id="networkInfo" class="info-box">
+                    <div class="info-item">
+                        <span class="info-label">Connection Type:</span>
+                        <span id="connectionType" class="info-value">Checking...</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Effective Type:</span>
+                        <span id="effectiveType" class="info-value">Checking...</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Downlink Speed:</span>
+                        <span id="downlink" class="info-value">Checking...</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Online Status:</span>
+                        <span id="onlineStatus" class="info-value">Checking...</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Response Time Chart -->
+            <section class="card">
+                <h2>Response Time History</h2>
+                <canvas id="responseChart"></canvas>
+                <button id="clearHistory" class="btn btn-secondary">Clear History</button>
+            </section>
+
+            <!-- Host List Section -->
+            <section class="card">
+                <h2>Quick Ping Hosts</h2>
+                <div class="host-list">
+                    <button class="host-btn" data-host="google.com">Google</button>
+                    <button class="host-btn" data-host="cloudflare.com">Cloudflare</button>
+                    <button class="host-btn" data-host="github.com">GitHub</button>
+                    <button class="host-btn" data-host="amazon.com">Amazon</button>
+                    <button class="host-btn" data-host="microsoft.com">Microsoft</button>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <p>Computer Networking Project - Ping & Network Monitoring</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <a href="script.js"></a>
+    <a href="styles.css"></a>
+</body>
+</html>
