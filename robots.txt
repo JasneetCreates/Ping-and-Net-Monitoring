@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jasneetcreates.github.io/Ping-and-Net-Monitoring/sitemap.xml
