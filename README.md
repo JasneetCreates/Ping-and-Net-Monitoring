@@ -1,2 +1,2 @@
 # Ping-and-Net-Monitoring
-http://127.0.0.1:3000/index.html
+https://jasneetcreates.github.io/Ping-and-Net-Monitoring/
